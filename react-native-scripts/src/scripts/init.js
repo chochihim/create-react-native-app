@@ -13,7 +13,8 @@ const DEFAULT_DEPENDENCIES = {
   expo: '^22.0.0',
   react: '16.0.0-beta.5',
   'react-native': '^0.49.5',
-  'react-navigation': '^1.0.0-beta.11',
+  'react-navigation': '^1.0.0-beta.15',
+  'styled-components': '^2.2.3',
 };
 
 // TODO figure out how this interacts with ejection
