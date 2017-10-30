@@ -1,6 +1,6 @@
 {
-  "name": "react-native-scripts",
-  "version": "1.6.0",
+  "name": "@chochihim/react-native-scripts",
+  "version": "1.6.1",
   "description": "Configuration and scripts for Create React Native App.",
   "license": "BSD-3-Clause",
   "keywords": [
