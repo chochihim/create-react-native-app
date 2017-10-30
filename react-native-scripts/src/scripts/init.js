@@ -13,7 +13,12 @@ const DEFAULT_DEPENDENCIES = {
   expo: '^22.0.0',
   react: '16.0.0-beta.5',
   'react-native': '^0.49.5',
+  intl: '^1.2.5',
+  'react-intl': '^2.4.0',
   'react-navigation': '^1.0.0-beta.15',
+  'react-redux': '^5.0.6',
+  redux: '^3.7.2',
+  'redux-thunk': '^2.2.0',
   'styled-components': '^2.2.3',
 };
 
