@@ -71,7 +71,7 @@ https://github.com/npm/npm/issues/16991
   const appPackage = JSON.parse(await fse.readFile(appPackagePath));
 
   // mutate the default package.json in any ways we need to
-  appPackage.main = './node_modules/react-native-scripts/build/bin/crna-entry.js';
+  appPackage.main = './node_modules/@chochihim/react-native-scripts/build/bin/crna-entry.js';
   appPackage.scripts = {
     start: 'react-native-scripts start',
     eject: 'react-native-scripts eject',

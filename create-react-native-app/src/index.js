@@ -184,7 +184,7 @@ async function run(
 }
 
 function getInstallPackage(version: ?string): string {
-  let packageToInstall = 'react-native-scripts';
+  let packageToInstall = '@chochihim/react-native-scripts';
   const validSemver = semver.valid(version);
   if (validSemver) {
     packageToInstall += `@${validSemver}`;
