@@ -7,6 +7,8 @@ import SearchScreen from './Search';
 import InformationScreen from './Information';
 import SettingScreen from './Setting';
 
+import TabBarLabel from './../features/app/components/TabBarLabel';
+
 import AppView from './styles/AppView';
 
 const MainNavigator = TabNavigator(
@@ -17,7 +19,7 @@ const MainNavigator = TabNavigator(
         searchTab: {
             screen: SearchScreen,
         },
-        healthCornerTab: {
+        informationTab: {
             screen: InformationScreen,
         },
         settingTab: {
@@ -32,6 +34,11 @@ const MainNavigator = TabNavigator(
             activeTintColor: '#08BA44',
             showIcon: true,
         },
+        navigationOptions: ({ navigation }) => ({
+            tabBarLabel: ({ tintColor }) => (
+                <TabBarLabel id={navigation.state.routeName} tintColor={tintColor} />
+            ),
+        }),
     }
 );
 

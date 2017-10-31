@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, Image } from 'react-native';
+import { FormattedMessage } from 'react-intl';
 
 class Search extends Component {
     static navigationOptions = {
-        tabBarLabel: 'Search',
         tabBarIcon: ({ tintColor }) => (
             <Image source={require('./img/search.png')} style={{ tintColor: tintColor }} />
         ),
@@ -12,7 +12,7 @@ class Search extends Component {
     render() {
         return (
             <View>
-                <Text>This is search!</Text>
+                <FormattedMessage id="searchTab" />
             </View>
         );
     }

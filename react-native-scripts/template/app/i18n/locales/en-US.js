@@ -5,4 +5,5 @@ export default {
     settingTab: 'Settings',
     currentLocale: 'Current Locale: {locale}',
     changeLocale: 'Change Locale',
+    goToSettings: 'Go to Settings',
 };

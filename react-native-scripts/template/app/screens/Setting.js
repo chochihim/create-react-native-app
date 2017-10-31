@@ -9,7 +9,6 @@ import { locale as localeEnum } from './../enum';
 
 class Setting extends Component {
     static navigationOptions = {
-        tabBarLabel: 'Setting',
         tabBarIcon: ({ tintColor }) => (
             <Image source={require('./img/setting.png')} style={{ tintColor: tintColor }} />
         ),
@@ -25,7 +24,6 @@ class Setting extends Component {
 
         return (
             <View>
-                <Text>This is setting!</Text>
                 <FormattedMessage
                     id="currentLocale"
                     values={{ locale: localeEnum[currentLocale] }}

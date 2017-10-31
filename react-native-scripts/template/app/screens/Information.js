@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, Image } from 'react-native';
+import { FormattedMessage } from 'react-intl';
 
 class Information extends Component {
     static navigationOptions = {
-        tabBarLabel: 'Information',
         tabBarIcon: ({ tintColor }) => (
             <Image source={require('./img/information.png')} style={{ tintColor: tintColor }} />
         ),
@@ -12,7 +12,7 @@ class Information extends Component {
     render() {
         return (
             <View>
-                <Text>This is information!</Text>
+                <FormattedMessage id="informationTab" />
             </View>
         );
     }

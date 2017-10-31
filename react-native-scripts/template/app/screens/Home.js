@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, Button, Image } from 'react-native';
+import { FormattedMessage } from 'react-intl';
 
 class Home extends Component {
     static navigationOptions = {
-        tabBarLabel: 'Home',
         tabBarIcon: ({ tintColor }) => (
             <Image source={require('./img/home.png')} style={{ tintColor: tintColor }} />
         ),
@@ -18,8 +18,11 @@ class Home extends Component {
     render() {
         return (
             <View>
-                <Text>This is home!</Text>
-                <Button title="Go to Setting" onPress={this.handlePressButton} />
+                <FormattedMessage id="goToSettings">
+                    {formattedText => (
+                        <Button title={formattedText} onPress={this.handlePressButton} />
+                    )}
+                </FormattedMessage>
             </View>
         );
     }

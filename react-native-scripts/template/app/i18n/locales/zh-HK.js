@@ -5,4 +5,5 @@ export default {
     settingTab: '設定',
     currentLocale: '現在語言: {locale}',
     changeLocale: '更改語言',
+    goToSettings: '前往首頁',
 };
